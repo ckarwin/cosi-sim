@@ -168,6 +168,13 @@ class Setup:
                     if self.include_transmission_prob == False:
                         pass
     
+                elif "Lightcurve" in split[0]:
+                
+                    lc_file = os.path.join(self.dc_dir, "Source_Library", each, split[3])
+                    shutil.copy2(lc_file, split[3])
+                    new_line = this_name + ".Lightcurve File " + split[2] + " " + os.path.join(self.home, "Sources", split[3]) + "\n"
+                    h.write(new_line)
+
                 else:
                     h.write(line)
        
