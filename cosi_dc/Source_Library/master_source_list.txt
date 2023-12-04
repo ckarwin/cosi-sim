@@ -47,4 +47,16 @@
 'DC2/sources/Ti44/SN1987A_x50',
 'DC2/sources/Ti44/SNsurprise',
 'DC2/sources/Ti44/SNsurprise_x50',
+'DC2/sources/GRBs/GRB080723557',
+'DC2/sources/GRBs/GRB080725541',
+'DC2/sources/GRBs/GRB081101491',
+'DC2/sources/GRBs/GRB081122614',
+'DC2/sources/GRBs/GRB081223419',
+'DC2/sources/GRBs/GRB090206620',
+'DC2/sources/GRBs/GRB090227772',
+'DC2/sources/GRBs/GRB090228204',
+'DC2/sources/GRBs/GRB101216721',
+'DC2/sources/GRBs/GRB130425327',
+'DC2/sources/GRBs/GRB180128215',
+'DC2/sources/GRBs/GRB200415A'
 ]

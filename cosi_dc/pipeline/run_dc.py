@@ -240,7 +240,7 @@ class RunDataChallenge:
 
         # Inputs:
         this_file = "Output/" + filename
-        new_file = "Output/fixed_times_step3.inc1.id1.sim"
+        new_file = "Output/fixed_times.inc1.id1.sim"
 
         # Open new file for writing:
         g = open(new_file,"w")

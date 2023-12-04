@@ -46,6 +46,18 @@ DC2/sources/Ti44/SN1987A <br />
 DC2/sources/Ti44/SN1987A_x50 <br />
 DC2/sources/Ti44/SNsurprise <br />
 DC2/sources/Ti44/SNsurprise_x50 <br />
+DC2/sources/GRBs/GRB080723557 <br />
+DC2/sources/GRBs/GRB080725541 <br />
+DC2/sources/GRBs/GRB081101491 <br />
+DC2/sources/GRBs/GRB081122614 <br />
+DC2/sources/GRBs/GRB081223419 <br />
+DC2/sources/GRBs/GRB090206620 <br />
+DC2/sources/GRBs/GRB090227772 <br />
+DC2/sources/GRBs/GRB090228204 <br />
+DC2/sources/GRBs/GRB101216721 <br />
+DC2/sources/GRBs/GRB130425327 <br />
+DC2/sources/GRBs/GRB180128215 <br />
+DC2/sources/GRBs/GRB200415A  <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

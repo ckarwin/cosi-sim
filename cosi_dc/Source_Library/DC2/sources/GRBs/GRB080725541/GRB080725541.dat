@@ -1,0 +1,6 @@
+# DP | Time point in [s] | Count rate (background subtracted, negative rate clipped to 0)
+IP LinLin
+DP 1892002.0 1624.359
+DP 1892002.43485 1624.359
+DP 1892002.434851 0.0
+EN

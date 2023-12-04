@@ -1,0 +1,15 @@
+DataChallenge.Source               GRB200415A
+GRB200415A.ParticleType     1
+GRB200415A.Beam             FarFieldPointSource 0 0
+
+# Orientation: Latitude b [deg], Longitude l [deg]
+GRB080723557.Orientation      Galactic Fixed -23.119324692998592 43.17258828800297
+
+# Comptonized Spectrum parameters: Flux integration min and max energies, alpha, Epeak
+GRB200415A.Spectrum         Comptonized 20.0 10000.0 0.01 1000
+
+# Average photon flux, in photon/cm2/s, for a Band function law fit to a single spectrum over the duration of the burst.
+GRB200415A.Flux             5.52222
+
+# GBM Light Curve.
+GRB200415A.Lightcurve       File false GRB200415A_Sum_n0_n1_n2_n3_n5_b0.dat
