@@ -1,0 +1,15 @@
+DataChallenge.Source               GRB101216721
+GRB101216721.ParticleType   1
+GRB101216721.Beam           FarFieldPointSource 0 0
+
+# Orientation: Latitude b [deg], Longitude l [deg]
+GRB101216721.Orientation    Galactic Fixed 54.000 284.000
+
+# Comptonized Spectrum parameters: Flux integration min and max energies, alpha, epeak
+GRB101216721.Spectrum       Comptonized 10.0 5000.0 -0.8634751 152.902
+
+# Average photon flux, in photon/cm2/s, for a Comptonized model fit to a single spectrum over the duration of the burst.
+GRB101216721.Flux           458.8106
+
+# GBM Light Curve.
+GRB101216721.Lightcurve     File false GRB101216721.dat
