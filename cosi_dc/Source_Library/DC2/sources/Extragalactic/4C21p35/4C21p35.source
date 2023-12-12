@@ -1,0 +1,8 @@
+DataChallenge.Source          4C21p35
+4C21p35.ParticleType               1
+4C21p35.Beam                       FarFieldPointSource 0 0
+4C21p35.Orientation                Galactic Fixed  81.659766 255.073637
+4C21p35.Spectrum                   File 4C21p35_spectrum.dat
+4C21p35.Flux                       0.0005535
+4C21p35.Lightcurve	 	   File false 4C21p35_lightcurve.dat 
+4C21p35.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat

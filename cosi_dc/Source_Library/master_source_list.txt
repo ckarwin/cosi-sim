@@ -60,5 +60,6 @@
 'DC2/sources/GRBs/GRB180128215',
 'DC2/sources/GRBs/GRB200415A',
 'DC2/sources/Extragalactic/3C273',
-'DC2/sources/Extragalactic/3C273_10xFlux'
+'DC2/sources/Extragalactic/3C273_10xFlux',
+'DC2/sources/Extragalactic/4C21p35'
 ]
