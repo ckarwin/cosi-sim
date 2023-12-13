@@ -61,6 +61,13 @@ DC2/sources/GRBs/GRB200415A  <br />
 DC2/sources/Extragalactic/3C273 <br /> 
 DC2/sources/Extragalactic/3C273_10xFlux <br />
 DC2/sources/Extragalactic/4C21p35 <br />
+DC2/sources/Galactic/1E1740_compton-powerlaw <br />
+DC2/sources/Galactic/1E1740_two_components <br />
+DC2/sources/Galactic/cygX1_soft <br />
+DC2/sources/Galactic/cygX1_hard <br />
+DC2/sources/Galactic/GRS1758 <br />
+DC2/sources/Galactic/cygX3_transition <br />
+DC2/sources/Galactic/cygX3_FSXR <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

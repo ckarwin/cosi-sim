@@ -1,0 +1,7 @@
+DataChallenge.Source          1E1740_two_components
+1E1740_two_components.ParticleType               1
+1E1740_two_components.Beam                       FarFieldPointSource 0 0
+1E1740_two_components.Orientation                Galactic Fixed -0.10575 359.11596
+1E1740_two_components.Spectrum                   File 1E1740_two_components_spec.dat
+1E1740_two_components.Flux                       0.0031337
+1E1740_two_components.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat

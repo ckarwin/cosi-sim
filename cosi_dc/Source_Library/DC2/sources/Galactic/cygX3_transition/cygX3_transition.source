@@ -1,0 +1,7 @@
+DataChallenge.Source          cygX3_transition
+cygX3_transition.ParticleType               1
+cygX3_transition.Beam                       FarFieldPointSource 0 0
+cygX3_transition.Orientation                Galactic Fixed 0.70006 79.84549
+cygX3_transition.Spectrum                   File cygX3_transition_spec.dat
+cygX3_transition.Flux                       0.001331405
+cygX3_transition.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat

@@ -1,0 +1,7 @@
+DataChallenge.Source          GRS1758
+GRS1758.ParticleType               1
+GRS1758.Beam                       FarFieldPointSource 0 0
+GRS1758.Orientation                Galactic Fixed -1.36106 4.50780
+GRS1758.Spectrum                   File GRS1758_spec.dat
+GRS1758.Flux                       0.003495
+GRS1758.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat

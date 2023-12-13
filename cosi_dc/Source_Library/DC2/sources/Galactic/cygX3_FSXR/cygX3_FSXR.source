@@ -1,0 +1,7 @@
+DataChallenge.Source          cygX3_FSXR
+cygX3_FSXR.ParticleType               1
+cygX3_FSXR.Beam                       FarFieldPointSource 0 0
+cygX3_FSXR.Orientation                Galactic Fixed 0.70006 79.84549
+cygX3_FSXR.Spectrum                   File cygX3_FSXR_spec.dat
+cygX3_FSXR.Flux                       0.00202334
+cygX3_FSXR.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat
