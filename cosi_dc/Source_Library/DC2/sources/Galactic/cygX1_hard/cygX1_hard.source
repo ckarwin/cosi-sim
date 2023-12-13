@@ -1,0 +1,7 @@
+DataChallenge.Source          cygX1_hard
+cygX1_hard.ParticleType               1
+cygX1_hard.Beam                       FarFieldPointSource 0 0
+cygX1_hard.Orientation                Galactic Fixed 3.066917 71.33496
+cygX1_hard.Spectrum                   File cygX1_hard_spec.dat
+cygX1_hard.Flux                       0.04580
+cygX1_hard.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat

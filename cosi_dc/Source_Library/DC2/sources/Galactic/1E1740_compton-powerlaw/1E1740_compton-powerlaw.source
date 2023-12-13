@@ -1,0 +1,7 @@
+DataChallenge.Source          1E1740_compton-powerlaw
+1E1740_compton-powerlaw.ParticleType               1
+1E1740_compton-powerlaw.Beam                       FarFieldPointSource 0 0
+1E1740_compton-powerlaw.Orientation                Galactic Fixed  -0.10575 359.11596
+1E1740_compton-powerlaw.Spectrum                   File 1E1740_compow_spec.dat
+1E1740_compton-powerlaw.Flux                       0.0042466
+1E1740_compton-powerlaw.FarFieldTransmissionProbability  TP_Earth_occultation_550km_zenith_pointing.dat

@@ -61,5 +61,9 @@
 'DC2/sources/GRBs/GRB200415A',
 'DC2/sources/Extragalactic/3C273',
 'DC2/sources/Extragalactic/3C273_10xFlux',
-'DC2/sources/Extragalactic/4C21p35'
+'DC2/sources/Extragalactic/4C21p35',
+'DC2/sources/Galactic/1E1740_compton-powerlaw',
+'DC2/sources/Galactic/1E1740_two_components',
+'DC2/sources/Galactic/cygX1_soft',
+'DC2/sources/Galactic/cygX1_hard'
 ]
