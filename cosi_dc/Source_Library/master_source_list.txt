@@ -65,5 +65,8 @@
 'DC2/sources/Galactic/1E1740_compton-powerlaw',
 'DC2/sources/Galactic/1E1740_two_components',
 'DC2/sources/Galactic/cygX1_soft',
-'DC2/sources/Galactic/cygX1_hard'
+'DC2/sources/Galactic/cygX1_hard',
+'DC2/sources/Galactic/cygX3_FSXR',
+'DC2/sources/Galactic/cygX3_transition',
+'DC2/sources/Galactic/GRS1758'
 ]
