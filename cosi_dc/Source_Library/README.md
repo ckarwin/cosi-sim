@@ -70,6 +70,9 @@ DC2/sources/Galactic/cygX1_hard <br />
 DC2/sources/Galactic/GRS1758 <br />
 DC2/sources/Galactic/cygX3_transition <br />
 DC2/sources/Galactic/cygX3_FSXR <br />
+DC2/sources/Galactic/Crab <br />
+DC2/sources/Galactic/PSRB1509 <br />
+DC2/sources/Galactic/PSRJ1846 <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
