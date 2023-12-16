@@ -70,5 +70,8 @@
 'DC2/sources/Galactic/cygX1_hard',
 'DC2/sources/Galactic/cygX3_FSXR',
 'DC2/sources/Galactic/cygX3_transition',
-'DC2/sources/Galactic/GRS1758'
+'DC2/sources/Galactic/GRS1758',
+'DC2/sources/Galactic/Crab',
+'DC2/sources/Galactic/PSRB1509',
+'DC2/sources/Galactic/PSRJ1846'
 ]

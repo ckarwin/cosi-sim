@@ -1,0 +1,44 @@
+DataChallenge.Source Crab_band1
+Crab_band1.ParticleType			1
+Crab_band1.Beam					FarFieldPointSource 0 0
+Crab_band1.Orientation			Galactic Fixed -5.78434 184.5575
+Crab_band1.Spectrum				File Crab_b1_spec.dat
+Crab_band1.Lightcurve			File true Crab_b1_lc.dat
+Crab_band1.Flux					0.0427298
+Crab_band1.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
+
+DataChallenge.Source Crab_band2
+Crab_band2.ParticleType			1
+Crab_band2.Beam					FarFieldPointSource 0 0
+Crab_band2.Orientation			Galactic Fixed -5.78434 184.5575
+Crab_band2.Spectrum				File Crab_b2_spec.dat
+Crab_band2.Lightcurve			File true Crab_b2_lc.dat
+Crab_band2.Flux					0.00933048
+Crab_band2.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
+                                           
+DataChallenge.Source Crab_band3
+Crab_band3.ParticleType			1
+Crab_band3.Beam					FarFieldPointSource 0 0
+Crab_band3.Orientation			Galactic Fixed -5.78434 184.5575
+Crab_band3.Spectrum				File Crab_b3_spec.dat
+Crab_band3.Lightcurve			File true Crab_b3_lc.dat
+Crab_band3.Flux					0.0014868
+Crab_band3.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
+                                                     
+DataChallenge.Source Crab_band4
+Crab_band4.ParticleType			1
+Crab_band4.Beam					FarFieldPointSource 0 0
+Crab_band4.Orientation			Galactic Fixed -5.78434 184.5575
+Crab_band4.Spectrum				File Crab_b4_spec.dat
+Crab_band4.Lightcurve			File true Crab_b4_lc.dat
+Crab_band4.Flux					0.0026412
+Crab_band4.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
+                                                     
+DataChallenge.Source Crab_band5
+Crab_band5.ParticleType			1
+Crab_band5.Beam					FarFieldPointSource 0 0
+Crab_band5.Orientation			Galactic Fixed -5.78434 184.5575
+Crab_band5.Spectrum				File Crab_b5_spec.dat
+Crab_band5.Lightcurve			File true Crab_b5_lc.dat
+Crab_band5.Flux					0.0007374
+Crab_band5.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
