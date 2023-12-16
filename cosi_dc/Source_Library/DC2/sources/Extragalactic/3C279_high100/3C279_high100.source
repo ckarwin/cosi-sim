@@ -1,0 +1,7 @@
+DataChallenge.Source          3C279_high100
+3C279_high100.ParticleType               1
+3C279_high100.Beam                       FarFieldPointSource 0 0
+3C279_high100.Orientation                Galactic Fixed  57.062412 305.104299
+3C279_high100.Spectrum                   File 3C279_high100_spec.dat
+3C279_high100.Flux                       0.0118672
+3C279_high100.FarFieldTransmissionProbability TP_Earth_occultation_550km_zenith_pointing.dat
