@@ -568,7 +568,7 @@ class RunDataChallenge:
         if self.mcosima == True:
             sim_files = "%s.p1.inc{1..%s}.id1.evta.gz"  %(self.name, str(self.num_cores))
             os.system("mrevan -g %s -c %s -f %s\
-                    | tee %output_name.txt" %(self.geo_file, self.revan_config, sim_files, output_name))
+                    | tee %s.txt" %(self.geo_file, self.revan_config, sim_files, output_name))
             
         # Go home:
         os.chdir(self.home)
