@@ -566,7 +566,10 @@ class RunDataChallenge:
         
         # mcosima mode:
         if self.mcosima == True:
-            sim_files = "%s.p1.inc{1..%s}.id1.evta.gz"  %(self.name, str(self.num_cores))
+            if self.run_nuc == True:
+                sim_files = "%s.p1.inc{1..%s}.id1.evta.gz"  %(self.name, str(self.num_cores))
+            if self.run_nuc == False:
+                sim_files = "%s.p1.inc{1..%s}.id1.sim.gz"  %(self.name, str(self.num_cores))
             os.system("mrevan -g %s -c %s -f %s\
                     | tee %s.txt" %(self.geo_file, self.revan_config, sim_files, output_name))
             
@@ -670,7 +673,7 @@ class RunDataChallenge:
 
         return
 
-    def run_mimrec(self, extract_root=False, geo_file="default", energy=None,
+    def run_mimrec(self, extract_root=False, geo_file="default", tra_input="default", energy=None,
             extract_events=True, make_spectrum=True, make_image=True, make_LC=True):
         
         """
@@ -681,6 +684,10 @@ class RunDataChallenge:
 
          geo_file: Option to use a different geometry file. Must specify full path. 
         
+         tra_input: Option to use a different input tra file. 
+         File name must end with '.tra.gz'. This option is particulary 
+         useful for processing outputs from mcosima. 
+
          energy: Energy in keV. For calculating Aeff from monoenergetic sims. 
         
          extract_events: Option to extract events. True or False. 
@@ -703,12 +710,29 @@ class RunDataChallenge:
 
         # Change to output directory:
         os.chdir("Output")
-    
-        # Define tra file:
-        tra_file =  self.name + ".inc1.id1.tra.gz"
+   
+        if tra_input == "default":
+        
+            # Define tra file:
+            tra_file =  self.name + ".inc1.id1.tra.gz"
 
-        # Define outputs:
-        output_events =  "%s.inc1.id1.extracted.tra.gz" %self.name
+            # Define outputs:
+            output_events =  "%s.inc1.id1.extracted.tra.gz" %self.name
+
+        if tra_input != "default":
+            tra_file = tra_input
+            
+            # Get output file:
+            split = tra_input.split(".")
+            
+            # Check that proper name format is used:
+            if (split[-1] != "gz") | (split[-2] != "tra"):
+                print("tra input file must end with '.tra.gz'")
+                sys.exit()
+            
+            # Construct output file name:
+            split.insert(-2,"extracted")
+            output_events = '.'.join(split)
 
         # Set pdf or root output:
         file_type = ".pdf"
@@ -811,7 +835,7 @@ class RunDataChallenge:
 
         return
 
-    def plot_spectrum(self, show_plots=True, exp_time=None):
+    def plot_spectrum(self, show_plots=True, exp_time=None, plot_kwargs={}, fig_kwargs={}):
 
         """
         Plots extracted mimrec spectrum.
@@ -819,6 +843,10 @@ class RunDataChallenge:
         show_plots: Option to not show plot (True or False). 
 
         exp_time: exposure time in seconds. 
+
+        plot_kwargs: Pass any kwargs to plt.plot().
+
+        fig_kwargs: Pass any kwargs to plt.gca().set().
         """
 
         # Setup figure:
@@ -832,14 +860,15 @@ class RunDataChallenge:
         e_width = df["BW[keV]"]
         r = df["src_ct/keV"]
         r_err = np.sqrt(r*e_width)/e_width
-        
+        xerr = e_width/2.0
+
         # Option to divide by exposure time:
         if exp_time != None:
             r = r/exp_time
             r_err = r_err/exp_time
 
-        plt.loglog(e,r,color="black",marker="",ms=8,ls="-",label="crab")
-        plt.errorbar(e,r,yerr=r_err,color="black",marker="",ms=8,ls="-",label="_nolabel_")
+        plt.plot(e,r,color="black",marker="o",ms=8,ls="",label="crab", **plot_kwargs)
+        plt.errorbar(e,r,yerr=r_err,xerr=xerr,color="black",marker="o",ms=8,ls="",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
@@ -847,8 +876,8 @@ class RunDataChallenge:
         plt.ylabel("counts/keV", fontsize=14)
         if exp_time != None:
             plt.ylabel("counts/keV/s", fontsize=14)
-        plt.xlim(1e2,10e3)
         plt.grid(color="grey",alpha=0.3,ls="--")
+        ax.set(**fig_kwargs)
         plt.savefig("Output/spectra.pdf")
         if show_plots == True:
             plt.show()
@@ -856,7 +885,7 @@ class RunDataChallenge:
 
         return
 
-    def plot_lc(self, normed_time=True, show_plots=True):
+    def plot_lc(self, normed_time=True, show_plots=True, plot_kwargs={}, fig_kwargs={}):
 
         """
         Plots extracted mimrec light curve.
@@ -879,13 +908,18 @@ class RunDataChallenge:
         if normed_time == True:
             t = (t - t[0])
         r = df["ct/s"]
-        plt.semilogy(t,r,color="black",alpha=1,zorder=0,label="cosmic photons")
+        t_width = df["t_width[s]"]
+        yerr = np.sqrt(r*t_width)/t_width
+
+        plt.plot(t,r,color="black",alpha=1,zorder=0,ls="",marker="o",label="cosmic photons", **plot_kwargs)
+        plt.errorbar(t,r,color="black",yerr=yerr,alpha=1,zorder=0,ls="",marker="o",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.xlabel("Time  [s]", fontsize=14)
         plt.ylabel("Rate [Hz]", fontsize=14)
         plt.grid(color="grey",alpha=0.3,ls="--")
+        ax.set(**fig_kwargs)
         plt.savefig("Output/LCs.pdf")
         if show_plots == True:
             plt.show()
