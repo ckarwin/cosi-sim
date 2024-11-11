@@ -1,7 +1,7 @@
 import os
-import cosi_dc
+import cosi_sim
 
-install_dir = os.path.split(cosi_dc.__file__)[0]
+install_dir = os.path.split(cosi_sim.__file__)[0]
 
 def main():
 

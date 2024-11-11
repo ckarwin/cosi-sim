@@ -1,7 +1,7 @@
 # Imports:
 import os,sys,shutil 
 import yaml
-import cosi_dc
+import cosi_sim
 
 class Setup:
         
@@ -13,7 +13,7 @@ class Setup:
         self.home = os.getcwd()
        
         # Get install directory:
-        self.dc_dir = os.path.split(cosi_dc.__file__)[0]
+        self.sim_dir = os.path.split(cosi_sim.__file__)[0]
 
         # Load main inputs from yaml file:
         with open(input_yaml,"r") as file:
@@ -34,7 +34,7 @@ class Setup:
             raise TypeError("Input sources must be a list!")
 
         # Check that input sources are included in library:
-        master_list_file = os.path.join(self.dc_dir, "Source_Library", "master_source_list.txt")
+        master_list_file = os.path.join(self.sim_dir, "Source_Library", "master_source_list.txt")
         f = open(master_list_file,"r")
         master_list = eval(f.read())
         for each in self.src_list:
@@ -88,12 +88,12 @@ class Setup:
                     "SecondaryProtons"]:
                 print("WARNING: Simulating instrumental background component:")
                 print("Make sure to set the correct paths in the source files!")
-                this_src_dir = os.path.join(self.dc_dir,"Source_Library",each,"*")
+                this_src_dir = os.path.join(self.sim_dir,"Source_Library",each,"*")
                 os.system("scp %s ." %this_src_dir)
                 break
 
             # Get source from source library:
-            this_src_dir = os.path.join(self.dc_dir,"Source_Library",each)
+            this_src_dir = os.path.join(self.sim_dir,"Source_Library",each)
             this_src = this_name + ".source"
             this_src_file = os.path.join(this_src_dir,this_src)
    
@@ -124,14 +124,14 @@ class Setup:
                         h.write(line)
                 
                     if beam_type == "FarFieldNormalizedEnergyBeamFluxFunction":
-                        spectrum_file = os.path.join(self.dc_dir, "Source_Library", each, split[2])
+                        spectrum_file = os.path.join(self.sim_dir, "Source_Library", each, split[2])
                         shutil.copy2(spectrum_file, split[2])
                         new_line = this_name + ".Beam FarFieldNormalizedEnergyBeamFluxFunction " \
                             + os.path.join(self.home, "Sources", split[2]) + "\n"
                         h.write(new_line)
                     
                     if beam_type == "FarFieldFileZenithDependent":
-                        beam_file = os.path.join(self.dc_dir, "Source_Library", each, split[2])
+                        beam_file = os.path.join(self.sim_dir, "Source_Library", each, split[2])
                         shutil.copy2(beam_file, split[2])
                         new_line = this_name + ".Beam FarFieldFileZenithDependent " \
                             + os.path.join(self.home, "Sources", split[2]) + "\n"
@@ -143,7 +143,7 @@ class Setup:
                             "FarFieldGaussian","FarFieldIsotropic","FarFieldFileZenithDependent"]:
                         
                         if split[1] == "File":
-                            spectrum_file = os.path.join(self.dc_dir, "Source_Library", each, split[2])
+                            spectrum_file = os.path.join(self.sim_dir, "Source_Library", each, split[2])
                             shutil.copy2(spectrum_file, split[2])
                             new_line = this_name + ".Spectrum File " + os.path.join(self.home, "Sources", split[2]) + "\n"
                             h.write(new_line)
@@ -170,7 +170,7 @@ class Setup:
     
                 elif "Lightcurve" in split[0]:
                 
-                    lc_file = os.path.join(self.dc_dir, "Source_Library", each, split[3])
+                    lc_file = os.path.join(self.sim_dir, "Source_Library", each, split[3])
                     shutil.copy2(lc_file, split[3])
                     new_line = this_name + ".Lightcurve File " + split[2] + " " + os.path.join(self.home, "Sources", split[3]) + "\n"
                     h.write(new_line)

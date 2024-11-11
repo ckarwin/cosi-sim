@@ -1,9 +1,9 @@
 # Imports:
-from cosi_dc.pipeline.run_dc import RunDataChallenge
+from cosi_sim.pipeline.simulate import Simulate
 
 ### SIMULATION SETUP ###
 # Define instance with input parameter card:
-instance = RunDataChallenge("inputs.yaml")
+instance = Sumulate("inputs.yaml")
 
 # Generate source files:
 # For steps 1 and 3, set the exposure time to the max time in the ori/LC files. 

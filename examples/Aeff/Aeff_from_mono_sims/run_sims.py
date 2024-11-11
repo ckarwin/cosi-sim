@@ -1,5 +1,5 @@
 # Imports:
-from cosi_dc.pipeline.calc_aeff import CalcAeff
+from cosi_sim.pipeline.calc_aeff import CalcAeff
 import sys,os
 
 def main(cmd_line):

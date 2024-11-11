@@ -1,8 +1,8 @@
 # Imports:
-from cosi_dc.pipeline.run_dc import RunDataChallenge
+from cosi_sim.pipeline.simulate import Simulate
 
 # Define instance with input parameter card:
-instance = RunDataChallenge("inputs.yaml")
+instance = Simulate("inputs.yaml")
 
 # Generate tra file for simulation challenge:
 instance.define_sim()
