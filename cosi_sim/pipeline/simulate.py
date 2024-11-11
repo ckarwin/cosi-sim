@@ -4,20 +4,8 @@
 #
 # Purpose: Main script for generating simulation challenge.
 # 
-# Index of functions:
-#
-#   RunDataChallenge(superclass)
-#       -define_sim()
-#       -run_cosima(seed="none")
-#       -msimconcatter()
-#       -run_nuclearizer(geo_file="default")
-#       -run_revan(geo_file="default")
-#       -run_mimrec(extract_root=False, geo_file="default")
-#       -clear_unessential_data()
-#
 ###########################################################
 
-######################
 # Imports:
 import os,sys,shutil 
 import yaml
@@ -28,13 +16,11 @@ from scipy.interpolate import interp1d
 import matplotlib.pyplot as plt
 import math
 import gzip
-import cosi_dc
+import cosi_sim
 import gc
-######################
-
 
 # Superclass:
-class RunDataChallenge:
+class Simulate:
     
     
     """Main inputs are specified in inputs.yaml file"""
@@ -45,7 +31,7 @@ class RunDataChallenge:
         self.home = os.getcwd()
         
         # Get install directory:
-        self.dc_dir = os.path.split(cosi_dc.__file__)[0]
+        self.sim_dir = os.path.split(cosi_sim.__file__)[0]
 
         # Load main inputs from yaml file:
         with open(input_yaml,"r") as file:
@@ -64,7 +50,7 @@ class RunDataChallenge:
         self.num_sims = inputs["num_sims"]
         self.run_type = inputs["run_type"]
         self.clear_sims = inputs["clear_sims"]
-        self.src_lib = os.path.join(self.dc_dir,"Source_Library")
+        self.src_lib = os.path.join(self.sim_dir,"Source_Library")
         self.run_nuc = inputs["run_nuc"]
         self.nuc_config = inputs["nuc_config"]
         self.revan_config = inputs["revan_config"]
@@ -817,17 +803,17 @@ class RunDataChallenge:
             
             # Extract spectrum histogram:
             if make_spectrum == True:
-                extract_spectrum_file = os.path.join(self.dc_dir,"pipeline/ExtractSpectrum.cxx")
+                extract_spectrum_file = os.path.join(self.sim_dir,"pipeline/ExtractSpectrum.cxx")
                 os.system("root -q -b %s" %extract_spectrum_file)
 
             # Extract light curve histogram:
             if make_LC == True:
-                extract_lc_file = os.path.join(self.dc_dir,"pipeline/ExtractLightCurve.cxx")
+                extract_lc_file = os.path.join(self.sim_dir,"pipeline/ExtractLightCurve.cxx")
                 os.system("root -q -b %s" %extract_lc_file)
         
             # Extract image histogram:
             if make_image == True:
-                extract_image_file = os.path.join(self.dc_dir,"pipeline/ExtractImage.cxx")
+                extract_image_file = os.path.join(self.sim_dir,"pipeline/ExtractImage.cxx")
                 os.system("root -q -b %s" %extract_image_file)
 
         # Go home:

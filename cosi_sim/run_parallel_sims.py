@@ -3,12 +3,12 @@ import os
 import shutil
 import time
 import sys
-from cosi_dc.pipeline.make_orientation_bins import make_bins
+from cosi_sim.pipeline.make_orientation_bins import make_bins
 import yaml
-from cosi_dc.pipeline.run_dc import RunDataChallenge
+from cosi_sim.pipeline.simulate import Simulate
 
 # Get parameters from data challene instance:
-instance = RunDataChallenge("inputs.yaml")
+instance = Simulate("inputs.yaml")
 name = instance.name
 orientation_file = instance.orientation_file
 lightcurve_file = instance.lightcurve_file

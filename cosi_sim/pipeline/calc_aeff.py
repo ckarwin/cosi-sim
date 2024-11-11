@@ -7,10 +7,10 @@ from scipy.interpolate import interp1d
 import matplotlib.pyplot as plt
 import math
 import gzip
-from cosi_dc.pipeline.make_plots import MakePlots
-from cosi_dc.pipeline.run_dc import RunDataChallenge
+from cosi_sim.pipeline.make_plots import MakePlots
+from cosi_sim.pipeline.simulate import Simulate
 
-class CalcAeff(RunDataChallenge):
+class CalcAeff(Simulate):
 
     def define_aeff_sim(self,energy,theta=0):
 
