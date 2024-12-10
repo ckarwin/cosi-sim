@@ -1,6 +1,6 @@
 # Imports:
 from cosi_sim.pipeline.sim_setup import Setup
-import cosi_sims
+import cosi_sim
 import os
 
 # Initial setup of source directory
@@ -14,5 +14,5 @@ else: submit_script = "submit_jobs.py"
 # Copy submission files:
 working_dir = os.getcwd()
 sim_dir = os.path.split(cosi_sim.__file__)[0]
-submit_files = os.path.join(sims_dir,"{run_parallel_sims.py,run_sims.py,%s}" %submit_script)
+submit_files = os.path.join(sim_dir,"{run_parallel_sims.py,run_sims.py,%s}" %submit_script)
 os.system("scp %s %s" %(submit_files, working_dir))
