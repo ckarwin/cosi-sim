@@ -74,6 +74,9 @@ DC2/sources/Galactic/Crab <br />
 DC2/sources/Galactic/PSRB1509 <br />
 DC2/sources/Galactic/PSRJ1846 <br />
 
+## Data Challenge 3 (DC3) <br />
+DC3/sources/Galactic/crab_baseline <br />
+
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
 Galdiff/GalBrem <br />

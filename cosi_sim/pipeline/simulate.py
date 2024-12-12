@@ -313,7 +313,7 @@ class Simulate:
         if stop == None:
             stop = self.num_sims+1
         for i in range(start,stop):
-            print()
+            print(i)
 
             this_file = "Simulations/sim_%s/Output/%s" %(str(i),input_file)
             
