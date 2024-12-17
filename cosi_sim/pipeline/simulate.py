@@ -863,7 +863,7 @@ class Simulate:
             r = r/exp_time
             r_err = r_err/exp_time
 
-        plt.plot(e,r,color="black",marker="o",ms=8,ls="",label="crab", **plot_kwargs)
+        plt.loglog(e,r,color="black",marker="o",ms=8,ls="",label="crab", **plot_kwargs)
         plt.errorbar(e,r,yerr=r_err,xerr=xerr,color="black",marker="o",ms=8,ls="",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
@@ -907,8 +907,8 @@ class Simulate:
         t_width = df["t_width[s]"]
         yerr = np.sqrt(r*t_width)/t_width
 
-        plt.plot(t,r,color="black",alpha=1,zorder=0,ls="",marker="o",label="cosmic photons", **plot_kwargs)
-        plt.errorbar(t,r,color="black",yerr=yerr,alpha=1,zorder=0,ls="",marker="o",label="_nolabel_", **plot_kwargs)
+        plt.semilogy(t,r,color="black",alpha=1,zorder=0,ls="-",marker="",label="cosmic photons", **plot_kwargs)
+        plt.errorbar(t,r,color="black",yerr=yerr,alpha=1,zorder=0,ls="-",marker="",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
