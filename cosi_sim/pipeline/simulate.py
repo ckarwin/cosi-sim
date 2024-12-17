@@ -594,13 +594,23 @@ class Simulate:
             print()
             print("checking sim " + str(i))
             print()
+            
+            main_file = "Simulations/sim_%s/Output/%s.inc1.id1.tra.gz" %(str(i),self.name)
+            # Make sure the file exists:
+            check = os.path.isfile(main_file)
+            if check == False:
+                print("WARNING: revan main output does not exists: " + str(i))
+                problem_list.append(i)
+                continue
+
             this_file = "Simulations/sim_%s/Output/%s" %(str(i),input_file)
             
             # Make sure the file exists:
             check = os.path.isfile(this_file)
             if check == False:
-                print("WARNING: revan output does not exists: " + str(i))
-                problem_list.append(i)
+                print("WARNING: revan terminal output does not exists: " + str(i))
+                if i not in problem_list:
+                    problem_list.append(i)
                 continue
            
             # The output files are large, but we really only need the end, 
