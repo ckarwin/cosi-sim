@@ -313,7 +313,7 @@ class Simulate:
         if stop == None:
             stop = self.num_sims+1
         for i in range(start,stop):
-            print(i)
+            print("checking sim " + str(i))
 
             this_file = "Simulations/sim_%s/Output/%s" %(str(i),input_file)
             
@@ -594,13 +594,23 @@ class Simulate:
             print()
             print("checking sim " + str(i))
             print()
+            
+            main_file = "Simulations/sim_%s/Output/%s.inc1.id1.tra.gz" %(str(i),self.name)
+            # Make sure the file exists:
+            check = os.path.isfile(main_file)
+            if check == False:
+                print("WARNING: revan main output does not exists: " + str(i))
+                problem_list.append(i)
+                continue
+
             this_file = "Simulations/sim_%s/Output/%s" %(str(i),input_file)
             
             # Make sure the file exists:
             check = os.path.isfile(this_file)
             if check == False:
-                print("WARNING: revan output does not exists: " + str(i))
-                problem_list.append(i)
+                print("WARNING: revan terminal output does not exists: " + str(i))
+                if i not in problem_list:
+                    problem_list.append(i)
                 continue
            
             # The output files are large, but we really only need the end, 
@@ -853,7 +863,7 @@ class Simulate:
             r = r/exp_time
             r_err = r_err/exp_time
 
-        plt.plot(e,r,color="black",marker="o",ms=8,ls="",label="crab", **plot_kwargs)
+        plt.loglog(e,r,color="black",marker="o",ms=8,ls="",label="crab", **plot_kwargs)
         plt.errorbar(e,r,yerr=r_err,xerr=xerr,color="black",marker="o",ms=8,ls="",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
@@ -897,8 +907,8 @@ class Simulate:
         t_width = df["t_width[s]"]
         yerr = np.sqrt(r*t_width)/t_width
 
-        plt.plot(t,r,color="black",alpha=1,zorder=0,ls="",marker="o",label="cosmic photons", **plot_kwargs)
-        plt.errorbar(t,r,color="black",yerr=yerr,alpha=1,zorder=0,ls="",marker="o",label="_nolabel_", **plot_kwargs)
+        plt.semilogy(t,r,color="black",alpha=1,zorder=0,ls="-",marker="",label="cosmic photons", **plot_kwargs)
+        plt.errorbar(t,r,color="black",yerr=yerr,alpha=1,zorder=0,ls="-",marker="",label="_nolabel_", **plot_kwargs)
 
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
