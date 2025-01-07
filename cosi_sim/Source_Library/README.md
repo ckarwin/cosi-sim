@@ -77,6 +77,7 @@ DC2/sources/Galactic/PSRJ1846 <br />
 ## Data Challenge 3 (DC3) <br />
 DC3/sources/Galactic/crab_baseline <br />
 DC3/backgrounds/GalTotal_SA100_F98 <br />
+DC3/sources/511/511_Testing <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
