@@ -14,6 +14,6 @@ DataChallenge.Source CentralPointSource511
 CentralPointSource511.ParticleType       1
 CentralPointSource511.Beam               FarFieldPointSource 0 0
 CentralPointSource511.Orientation	 Galactic Fixed 0 0
-CentralPointSource511.Spectrum           Gaussian 511 0.85 3
+CentralPointSource511.Spectrum           Mono 511 
 CentralPointSource511.Flux               1e-2
 CentralPointSource511.EarthOccultation false
