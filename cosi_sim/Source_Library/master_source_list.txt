@@ -76,5 +76,6 @@
 'DC2/sources/Galactic/PSRJ1846',
 'DC3/sources/Galactic/crab_baseline',
 'DC3/backgrounds/GalTotal_SA100_F98',
-'DC3/sources/511/511_Testing'
+'DC3/sources/511/511_Testing',
+'DC3/sources/511/511_Testing_Extended'
 ]

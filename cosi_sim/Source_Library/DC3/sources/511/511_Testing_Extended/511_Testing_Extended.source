@@ -1,0 +1,19 @@
+# This is just for testing
+
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source NarrowGaussian511
+NarrowGaussian511.ParticleType       1
+NarrowGaussian511.Beam            FarFieldGaussian 0 0 5.0
+NarrowGaussian511.Orientation	 Galactic Fixed 0 0
+NarrowGaussian511.Spectrum           Mono 511 
+NarrowGaussian511.Flux               4e-2
+NarrowGaussian511.EarthOccultation false
