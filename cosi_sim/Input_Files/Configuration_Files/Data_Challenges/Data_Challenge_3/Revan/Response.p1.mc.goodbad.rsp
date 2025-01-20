@@ -1,0 +1,26 @@
+# Response Matrix 2
+Version 1
+
+# Name
+NM MC: Good/Bad ratio (=prior)
+
+# The order of the matrix
+OD 2
+
+# The number of simulated events
+TS 0
+
+# The far-field start area (if zero a non-far-field simulation, or non-spherical start area was used)
+SA 0
+
+# The spectral parameters (empty if not set)
+SM 
+
+Type ResponseMatrixO2Stream
+A1 0 1 2 
+N1 GoodBad
+A2 2 3 4 5 6 7 8 
+N2 Sequence length
+StartStream 12
+1.1132e+08 1.28795e+07 2.61923e+08 7.58271e+06 6.87402e+08 3.33954e+06 1.93862e+09 1.07084e+06 6.15935e+09 262733 2.25364e+10 49665 
+StopStream

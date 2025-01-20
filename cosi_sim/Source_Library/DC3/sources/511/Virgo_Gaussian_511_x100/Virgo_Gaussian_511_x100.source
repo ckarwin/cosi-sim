@@ -1,0 +1,20 @@
+#
+#Virgo cluster as a 511 keV extended source at 100X flux
+
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source Virgo_Gaussian_511_x100
+Virgo_Gaussian_511_x100.ParticleType           1
+Virgo_Gaussian_511_x100.Beam                   FarFieldGaussian 0 0 2.7
+Virgo_Gaussian_511_x100.Orientation            Galactic Fixed 74.0 284.0
+Virgo_Gaussian_511_x100.Spectrum               Gaussian 512.5 0.85 3
+Virgo_Gaussian_511_x100.Flux                   4.63e-5
+Virgo_Gaussian_511_x100.EarthOccultation false
