@@ -1,1 +1,0 @@
-In the revan configuration file (SMEXv12.Continuum.HEALPixO3.binnedimaging.revan.cfg), replace line 71 with your path to Revan/Response.p1.mc.goodbad.rsp, corresponding to the BayesianComptonFile keyword. 
