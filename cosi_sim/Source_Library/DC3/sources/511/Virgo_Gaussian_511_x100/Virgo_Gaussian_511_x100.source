@@ -1,5 +1,5 @@
-#
-#Virgo cluster as a 511 keV extended source at 100X flux
+
+# Virgo cluster as a 511 keV extended source at 100X flux
 
 # Define DC3 sim settings (optimizes sim time):
 DefaultRangeCut 0.005
