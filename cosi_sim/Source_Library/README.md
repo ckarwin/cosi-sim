@@ -85,6 +85,10 @@ DC3/sources/511/M31_Gaussian_511 <br />
 DC3/sources/511/M31_Gaussian_511_x100 <br />
 DC3/sources/511/Virgo_Gaussian_511 <br />
 DC3/sources/511/Virgo_Gaussian_511_x100 <br />
+DC3/sources/511/Globular_Cluster_NGC_6121 <br />
+DC3/sources/511/Globular_Cluster_NGC_6397 <br />
+DC3/sources/511/Globular_Cluster_Omega_Cen <br />
+DC3/sources/511/Globular_Cluster_Tuc_47 <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
