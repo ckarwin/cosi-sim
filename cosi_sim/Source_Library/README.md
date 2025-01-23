@@ -79,7 +79,7 @@ DC3/sources/Galactic/crab_baseline <br />
 DC3/backgrounds/GalTotal_SA100_F98 <br />
 DC3/sources/511/511_Testing <br />
 DC3/sources/511/511_Testing_Extended <br />
-DC3/sources/511/LMC_Gaussian_511 <br />
+DC3/sources/511/LMC_Gaussian_511 <br/>
 DC3/sources/511/LMC_Gaussian_511_x100 <br />
 DC3/sources/511/M31_Gaussian_511 <br />
 DC3/sources/511/M31_Gaussian_511_x100 <br />
@@ -89,6 +89,16 @@ DC3/sources/511/Globular_Cluster_NGC_6121 <br />
 DC3/sources/511/Globular_Cluster_NGC_6397 <br />
 DC3/sources/511/Globular_Cluster_Omega_Cen <br />
 DC3/sources/511/Globular_Cluster_Tuc_47 <br />
+DC3/sources/Al26/26Al_Cyg_Region <br />
+DC3/sources/Al26/26Al_NE2001 <br />
+DC3/sources/Extragalactic/3C279_high100 <br />
+DC3/sources/Extragalactic/4C21p35_flare <br />
+DC3/sources/Extragalactic/4C21p35_noflare <br />
+DC3/sources/Extragalactic/NGC_1068 <br />
+DC3/sources/Extragalactic/NGC_4151_bright <br />
+DC3/sources/Extragalactic/NGC_4151_EC1000 <br />
+DC3/sources/Extragalactic/NGC_4151_EC200 <br />
+DC3/sources/Extragalactic/NGC_4151_faint <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

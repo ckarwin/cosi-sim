@@ -1,0 +1,17 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source          crab_flat_spectrum
+crab_flat_spectrum.ParticleType               1
+crab_flat_spectrum.Beam                       FarFieldPointSource 0 0
+crab_flat_spectrum.Orientation                Galactic Fixed -5.78 184.56
+crab_flat_spectrum.Spectrum 		 PowerLaw 100 10000 0 
+crab_flat_spectrum.Flux                       0.048977
+crab_flat_spectrum.EarthOccultation false
