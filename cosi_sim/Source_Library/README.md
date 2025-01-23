@@ -79,7 +79,7 @@ DC3/sources/Galactic/crab_baseline <br />
 DC3/backgrounds/GalTotal_SA100_F98 <br />
 DC3/sources/511/511_Testing <br />
 DC3/sources/511/511_Testing_Extended <br />
-DC3/sources/511/LMC_Gaussian_511 <br />
+DC3/sources/511/LMC_Gaussian_511 <br/>
 DC3/sources/511/LMC_Gaussian_511_x100 <br />
 DC3/sources/511/M31_Gaussian_511 <br />
 DC3/sources/511/M31_Gaussian_511_x100 <br />
