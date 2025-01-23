@@ -88,5 +88,15 @@
 'DC3/sources/511/Globular_Cluster_NGC_6121',
 'DC3/sources/511/Globular_Cluster_NGC_6397',
 'DC3/sources/511/Globular_Cluster_Omega_Cen',
-'DC3/sources/511/Globular_Cluster_Tuc_47'
+'DC3/sources/511/Globular_Cluster_Tuc_47',
+'DC3/sources/Al26/26Al_Cyg_Region',
+'DC3/sources/Al26/26Al_NE2001',
+'DC3/sources/Extragalactic/3C279_high100',
+'DC3/sources/Extragalactic/4C21p35_flare',
+'DC3/sources/Extragalactic/4C21p35_noflare',
+'DC3/sources/Extragalactic/NGC_1068',
+'DC3/sources/Extragalactic/NGC_4151_bright',
+'DC3/sources/Extragalactic/NGC_4151_EC1000',
+'DC3/sources/Extragalactic/NGC_4151_EC200',
+'DC3/sources/Extragalactic/NGC_4151_faint'
 ]
