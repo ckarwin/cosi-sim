@@ -13,6 +13,6 @@ DataChallenge.Source          4C21p35_flare
 4C21p35_flare.Beam                       FarFieldPointSource 0 0
 4C21p35_flare.Orientation                Galactic Fixed  81.659766 255.073637
 4C21p35_flare.Spectrum                   File 4C_21_spectrum_flare.dat
-4C21p35_flare.Flux                       0.0005535
-4C21p35_flare.Lightcurve	 	   File false 4C_21_lightcurve_flare.dat
+4C21p35_flare.Flux                       0.017293201590129727
+4C21p35_flare.Lightcurve	 	 File false 4C_21_lightcurve_flare.dat
 4C21p35_flare.EarthOccultation false

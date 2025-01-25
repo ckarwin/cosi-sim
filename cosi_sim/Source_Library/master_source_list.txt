@@ -98,5 +98,11 @@
 'DC3/sources/Extragalactic/NGC_4151_bright',
 'DC3/sources/Extragalactic/NGC_4151_EC1000',
 'DC3/sources/Extragalactic/NGC_4151_EC200',
-'DC3/sources/Extragalactic/NGC_4151_faint'
+'DC3/sources/Extragalactic/NGC_4151_faint',
+'DC3/sources/DarkMatter/eeg_Bur',
+'DC3/sources/DarkMatter/eeg_ISO',
+'DC3/sources/DarkMatter/eeg_NFW',
+'DC3/sources/DarkMatter/gg_Bur',
+'DC3/sources/DarkMatter/gg_ISO',
+'DC3/sources/DarkMatter/gg_NFW'
 ]

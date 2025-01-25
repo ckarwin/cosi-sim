@@ -1,0 +1,16 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source gg_NFW
+gg_NFW.ParticleType 1
+gg_NFW.Beam FarFieldNormalizedEnergyBeamFluxFunction gg_NFW.dat
+gg_NFW.Spectrum NormalizedEnergyBeamFluxFunction
+gg_NFW.Orientation Galactic Fixed 90 180
+gg_NFW.EarthOccultation false
