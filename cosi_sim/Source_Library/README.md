@@ -99,6 +99,12 @@ DC3/sources/Extragalactic/NGC_4151_bright <br />
 DC3/sources/Extragalactic/NGC_4151_EC1000 <br />
 DC3/sources/Extragalactic/NGC_4151_EC200 <br />
 DC3/sources/Extragalactic/NGC_4151_faint <br />
+DC3/sources/DarkMatter/eeg_Bur <br />
+DC3/sources/DarkMatter/eeg_ISO <br />
+DC3/sources/DarkMatter/eeg_NFW <br />
+DC3/sources/DarkMatter/gg_Bur <br />
+DC3/sources/DarkMatter/gg_ISO <br />
+DC3/sources/DarkMatter/gg_NFW <br />W
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
