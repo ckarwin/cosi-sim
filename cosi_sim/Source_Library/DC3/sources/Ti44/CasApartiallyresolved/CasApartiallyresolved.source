@@ -1,0 +1,47 @@
+# Author: Anaya Valluvan
+
+# FR: Fully Resolved
+# PR: Partially Resolved
+# UR: Unresolved
+# SYM: Symmetric
+# In all 4 scenarios, bulk centre of motion
+# is at rest. 
+# Doppler broadening is limited to 1000 km/s
+# as otherwise, when combined with the Doppler 
+# shifts, the signal will fall quite outside
+# the DC2 simulated response region of 1143-
+# 1171 keV. 
+
+# PR: 1.2x asymmetry in Doppler shifts
+
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+# Clump 1: Contains 2/3 of total 44Ti yield
+# Doppler shifted towards from the observer 
+# (blueshifted). Has peak energy higher than 1157 keV
+DataChallenge.Source		    PR_clump1
+PR_clump1.ParticleType               1
+PR_clump1.Beam                       FarFieldPointSource 0 0
+PR_clump1.Orientation                Galactic Fixed -2.129570 111.734745
+PR_clump1.Spectrum                   Gaussian 1159.34 1.63 3         
+PR_clump1.Flux                       0.0002
+PR_clump1.EarthOccultation false
+
+# Clump 2: Contains 1/3 of total 44Ti yield
+# Doppler shifted away from the observer 
+# (redshifted). Has peak energy lower than 1157 keV
+DataChallenge.Source		    PR_clump2
+PR_clump2.ParticleType               1
+PR_clump2.Beam                       FarFieldPointSource 0 0
+PR_clump2.Orientation                Galactic Fixed -2.129570 111.734745
+PR_clump2.Spectrum                   Gaussian 1152.41 1.63 3         
+PR_clump2.Flux                       0.0001
+PR_clump2.EarthOccultation false
