@@ -115,7 +115,7 @@ DC3/sources/DarkMatter/eeg_ISO <br />
 DC3/sources/DarkMatter/eeg_NFW <br />
 DC3/sources/DarkMatter/gg_Bur <br />
 DC3/sources/DarkMatter/gg_ISO <br />
-DC3/sources/DarkMatter/gg_NFW <br />W
+DC3/sources/DarkMatter/gg_NFW <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

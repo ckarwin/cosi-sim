@@ -1,0 +1,16 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source AnnihilationFrom44TiPositronsLine
+AnnihilationFrom44TiPositronsLine.ParticleType 1
+AnnihilationFrom44TiPositronsLine.Beam FarFieldNormalizedEnergyBeamFluxFunction annihilation_pos_from_44Ti_v2_line.dat
+AnnihilationFrom44TiPositronsLine.Spectrum NormalizedEnergyBeamFluxFunction
+AnnihilationFrom44TiPositronsLine.Orientation Galactic Fixed 90 180
+AnnihilationFrom44TiPositronsLine.EarthOccultation false
