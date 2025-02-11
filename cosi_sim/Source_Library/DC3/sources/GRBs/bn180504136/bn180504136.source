@@ -1,0 +1,31 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source               bn180504136
+bn180504136.ParticleType    1
+bn180504136.Beam            FarFieldPointSource 0.0 0.0
+
+# Orientation: Latitude b [deg], Longitude l [deg]
+bn180504136.Orientation     Galactic Fixed 60.685272333628426 34.13107759314095
+
+# Spectrum 
+bn180504136.Spectrum        Band 100 10000 -0.7405859 -2.123676 112.90408770236893
+
+# Average photon flux in photon/cm2/s
+bn180504136.Flux            0.4181368853205237
+
+# Polarization: fraction in [0,1], angle in [0,180]
+bn180504136.Polarization       		galactic 0.8 45.00
+
+# Lightcurve
+bn180504136.Lightcurve      File false bn180504136_lightcurve.dat
+
+# Earth occultation:
+bn180504136.EarthOccultation false
