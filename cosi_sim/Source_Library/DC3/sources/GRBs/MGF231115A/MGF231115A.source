@@ -1,0 +1,31 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source               MGF231115A
+MGF231115A.ParticleType     1
+MGF231115A.Beam             FarFieldPointSource 0 0
+
+# Orientation: Latitude b [deg], Longitude l [deg]
+MGF080723557.Orientation      Galactic Fixed 40.56775	141.6723674
+
+# Comptonized Spectrum parameters: Flux integration min and max energies, alpha, Epeak
+MGF231115A.Spectrum         Comptonized 100.0 10000.0 0.14 618
+
+# Average photon flux, in photon/cm2/s, for a Comptonized function fit to a single spectrum over the duration of the burst.
+MGF231115A.Flux             13.48713940
+
+# GBM Light Curve.
+MGF231115A.Lightcurve       File false GRB231115A_sim/GRB231115A_Sum_n3_n6_n7_n8_n9_b1.dat
+
+#Polarization
+MGF231115A.Polarization galactic 1 90
+
+# Earth occultation:
+MGF231115A.EarthOccultation false

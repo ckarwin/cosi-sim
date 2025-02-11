@@ -116,6 +116,35 @@ DC3/sources/DarkMatter/eeg_NFW <br />
 DC3/sources/DarkMatter/gg_Bur <br />
 DC3/sources/DarkMatter/gg_ISO <br />
 DC3/sources/DarkMatter/gg_NFW <br />
+DC3/sources/Galactic/GalTotal_SA100_F98 <br />
+DC3/sources/Galactic/PSRB1259 <br />
+DC3/sources/Galactic/PSRB1259_10x <br />
+DC3/sources/Galactic/nova_co_continuum <br />
+DC3/sources/Galactic/nova_co_511keV <br />
+DC3/sources/Galactic/nova_co_478keV <br />
+DC3/sources/Galactic/MAXIJ1820 <br />
+DC3/sources/Galactic/MAXIJ1348 <br />
+DC3/sources/Galactic/GRS1758 <br />
+DC3/sources/Galactic/cygX1_hard <br />
+DC3/sources/Galactic/cygX1_soft <br />
+DC3/sources/Galactic/1E1740_compow <br />
+DC3/sources/Galactic/1E1740_twocompt <br />
+DC3/sources/GRBs/bn081207680 <br />
+DC3/sources/GRBs/bn090424592 <br />
+DC3/sources/GRBs/bn100612726 <br />
+DC3/sources/GRBs/bn110605183 <br />
+DC3/sources/GRBs/bn131122490 <br />
+DC3/sources/GRBs/bn140329295 <br />
+DC3/sources/GRBs/bn161004964 <br />
+DC3/sources/GRBs/bn170405777 <br />
+DC3/sources/GRBs/bn180504136 <br />
+DC3/sources/GRBs/bn180703876 <br />
+DC3/sources/GRBs/MGF051103 <br />
+DC3/sources/GRBs/MGF070201 <br />
+DC3/sources/GRBs/MGF070222 <br />
+DC3/sources/GRBs/MGF180128A <br />
+DC3/sources/GRBs/MGF200415A <br />
+DC3/sources/GRBs/MGF231115A <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
