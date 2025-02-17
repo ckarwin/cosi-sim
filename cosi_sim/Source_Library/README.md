@@ -73,10 +73,20 @@ DC2/sources/Galactic/cygX3_FSXR <br />
 DC2/sources/Galactic/Crab <br />
 DC2/sources/Galactic/PSRB1509 <br />
 DC2/sources/Galactic/PSRJ1846 <br />
-
+ 
 ## Data Challenge 3 (DC3) <br />
-DC3/sources/Galactic/crab_baseline <br />
 DC3/backgrounds/GalTotal_SA100_F98 <br />
+DC3/backgrounds/AlbedoNeutrons <br />
+DC3/backgrounds/AlbedoPhotons <br />
+DC3/backgrounds/CosmicPhotons <br />
+DC3/backgrounds/PrimaryAlphas <br />
+DC3/backgrounds/PrimaryElectrons <br />
+DC3/backgrounds/PrimaryPositrons <br />
+DC3/backgrounds/PrimaryProtons <br />
+DC3/backgrounds/SAAprotons <br />
+DC3/backgrounds/SecondaryElectrons <br />
+DC3/backgrounds/SecondaryPositrons <br />
+DC3/backgrounds/SecondaryProtons <br />
 DC3/sources/511/511_Testing <br />
 DC3/sources/511/511_Testing_Extended <br />
 DC3/sources/511/LMC_Gaussian_511 <br/>
@@ -116,6 +126,8 @@ DC3/sources/DarkMatter/eeg_NFW <br />
 DC3/sources/DarkMatter/gg_Bur <br />
 DC3/sources/DarkMatter/gg_ISO <br />
 DC3/sources/DarkMatter/gg_NFW <br />
+DC3/sources/Galactic/crab_baseline <br />
+DC3/sources/Galactic/crab_flat_spectrum <br />
 DC3/sources/Galactic/GalTotal_SA100_F98 <br />
 DC3/sources/Galactic/PSRB1259 <br />
 DC3/sources/Galactic/PSRB1259_10x <br />
