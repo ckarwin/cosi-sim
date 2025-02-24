@@ -22,9 +22,9 @@ MGF231115A.Spectrum         Comptonized 100.0 10000.0 0.14 618
 MGF231115A.Flux             13.48713940
 
 # GBM Light Curve.
-MGF231115A.Lightcurve       File false GRB231115A_sim/GRB231115A_Sum_n3_n6_n7_n8_n9_b1.dat
+MGF231115A.Lightcurve       File false GRB231115A_Sum_n3_n6_n7_n8_n9_b1.dat
 
-#Polarization
+# Polarization
 MGF231115A.Polarization galactic 1 90
 
 # Earth occultation:
