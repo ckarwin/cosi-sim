@@ -13,7 +13,7 @@ bn161004964.ParticleType    1
 bn161004964.Beam            FarFieldPointSource 0.0 0.0
 
 # Orientation: Latitude b [deg], Longitude l [deg]
-bn161004964.Orientation     Galactic Fixed -64.96047413163542 7.431206519680366
+bn161004964.Orientation     Galactic Fixed -48.90083593193577 190.84721613954312
 
 # Spectrum 
 bn161004964.Spectrum        Band 100 10000 -0.8107229 -2.392184 114.00278370785078

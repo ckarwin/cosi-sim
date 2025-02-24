@@ -24,7 +24,7 @@ MGF200415A.Flux             11.568913735828747
 # GBM Light Curve.
 MGF200415A.Lightcurve       File false GRB_200415A_Sum_n0_n1_n2_n3_n5_b0.dat
 
-#Polarization
+# Polarization
 MGF200415A.Polarization galactic 1 90
 
 # Earth occultation:
