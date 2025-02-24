@@ -73,7 +73,7 @@
 'DC2/sources/Galactic/GRS1758',
 'DC2/sources/Galactic/Crab',
 'DC2/sources/Galactic/PSRB1509',
-'DC2/sources/Galactic/PSRJ1846',,
+'DC2/sources/Galactic/PSRJ1846',
 'DC3/backgrounds/GalTotal_SA100_F98',
 'DC3/backgrounds/AlbedoNeutrons',
 'DC3/backgrounds/AlbedoPhotons',
