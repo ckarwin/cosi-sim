@@ -157,6 +157,11 @@ DC3/sources/GRBs/MGF070222 <br />
 DC3/sources/GRBs/MGF180128A <br />
 DC3/sources/GRBs/MGF200415A <br />
 DC3/sources/GRBs/MGF231115A <br />
+DC3/sources/GRBs/MgtBurst_bright_complex <br />
+DC3/sources/GRBs/MgtBurst_bright_simple <br />
+DC3/sources/GRBs/MgtBurst_dim_complex <br />
+DC3/sources/GRBs/MgtBurst_dim_simple <br />
+DC3/sources/GRBs/1RXSJ170849 <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

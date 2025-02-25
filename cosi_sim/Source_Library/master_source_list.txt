@@ -155,5 +155,10 @@
 'DC3/sources/GRBs/MGF070222',
 'DC3/sources/GRBs/MGF180128A',
 'DC3/sources/GRBs/MGF200415A',
-'DC3/sources/GRBs/MGF231115A'
+'DC3/sources/GRBs/MGF231115A',
+'DC3/sources/GRBs/MgtBurst_bright_complex',
+'DC3/sources/GRBs/MgtBurst_bright_simple',
+'DC3/sources/GRBs/MgtBurst_dim_complex',
+'DC3/sources/GRBs/MgtBurst_dim_simple',
+'DC3/sources/GRBs/1RXSJ170849'
 ]
