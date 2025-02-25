@@ -1,0 +1,20 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source Burst
+Burst.ParticleType		1
+Burst.Beam				FarFieldPointSource 0 0
+Burst.Orientation		Galactic Fixed 0.81875 57.247
+Burst.Spectrum			File MgtBurst_complex_spec.dat
+Burst.Lightcurve		File false MgtBurst_complex_lc.dat
+Burst.Flux				0.314537
+
+# Earth occultation:
+bn090424592.EarthOccultation false
