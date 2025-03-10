@@ -141,6 +141,7 @@ DC3/sources/Galactic/cygX1_hard <br />
 DC3/sources/Galactic/cygX1_soft <br />
 DC3/sources/Galactic/1E1740_compow <br />
 DC3/sources/Galactic/1E1740_twocompt <br />
+DC3/sources/Galactic/1RXSJ170849 <br />
 DC3/sources/GRBs/bn081207680 <br />
 DC3/sources/GRBs/bn090424592 <br />
 DC3/sources/GRBs/bn100612726 <br />
@@ -151,6 +152,7 @@ DC3/sources/GRBs/bn161004964 <br />
 DC3/sources/GRBs/bn170405777 <br />
 DC3/sources/GRBs/bn180504136 <br />
 DC3/sources/GRBs/bn180703876 <br />
+DC3/sources/GRBs/bn080802386 <br />
 DC3/sources/GRBs/MGF051103 <br />
 DC3/sources/GRBs/MGF070201 <br />
 DC3/sources/GRBs/MGF070222 <br />
@@ -161,7 +163,6 @@ DC3/sources/GRBs/MgtBurst_bright_complex <br />
 DC3/sources/GRBs/MgtBurst_bright_simple <br />
 DC3/sources/GRBs/MgtBurst_dim_complex <br />
 DC3/sources/GRBs/MgtBurst_dim_simple <br />
-DC3/sources/GRBs/1RXSJ170849 <br />
 
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />

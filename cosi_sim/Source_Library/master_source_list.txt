@@ -140,6 +140,7 @@
 'DC3/sources/Galactic/cygX1_soft',
 'DC3/sources/Galactic/1E1740_compow',
 'DC3/sources/Galactic/1E1740_twocompt',
+'DC3/sources/Galactic/1RXSJ170849',
 'DC3/sources/GRBs/bn081207680',
 'DC3/sources/GRBs/bn090424592',
 'DC3/sources/GRBs/bn100612726',
@@ -150,6 +151,7 @@
 'DC3/sources/GRBs/bn170405777',
 'DC3/sources/GRBs/bn180504136',
 'DC3/sources/GRBs/bn180703876',
+'DC3/sources/GRBs/bn080802386',
 'DC3/sources/GRBs/MGF051103',
 'DC3/sources/GRBs/MGF070201',
 'DC3/sources/GRBs/MGF070222',
@@ -159,6 +161,5 @@
 'DC3/sources/GRBs/MgtBurst_bright_complex',
 'DC3/sources/GRBs/MgtBurst_bright_simple',
 'DC3/sources/GRBs/MgtBurst_dim_complex',
-'DC3/sources/GRBs/MgtBurst_dim_simple',
-'DC3/sources/GRBs/1RXSJ170849'
+'DC3/sources/GRBs/MgtBurst_dim_simple'
 ]
