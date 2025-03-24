@@ -1,0 +1,63 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source                   cygX3_quiescent
+cygX3_quiescent.ParticleType                     1
+cygX3_quiescent.Beam                             FarFieldPointSource 0 0
+cygX3_quiescent.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_quiescent.Spectrum                         File cygX3_quiescent_spec.dat
+cygX3_quiescent.Lightcurve                       File false cygX3_quiescent_lc.dat
+cygX3_quiescent.Flux                             0.0012516
+cygX3_quiescent.EarthOccultation false
+
+DataChallenge.Source                   cygX3_transition
+cygX3_transition.ParticleType                     1
+cygX3_transition.Beam                             FarFieldPointSource 0 0
+cygX3_transition.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_transition.Spectrum                         File cygX3_transition_spec.dat
+cygX3_transition.Lightcurve                       File false cygX3_transition_lc.dat
+cygX3_transition.Flux                             0.001331405
+cygX3_transition.EarthOccultation false
+
+DataChallenge.Source                   cygX3_FHXR
+cygX3_FHXR.ParticleType                     1
+cygX3_FHXR.Beam                             FarFieldPointSource 0 0
+cygX3_FHXR.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_FHXR.Spectrum                         File cygX3_FHXR_spec.dat
+cygX3_FHXR.Lightcurve                       File false cygX3_FHXR_lc.dat
+cygX3_FHXR.Flux                             0.00082536
+cygX3_FHXR.EarthOccultation false
+
+DataChallenge.Source                   cygX3_FIM
+cygX3_FIM.ParticleType                     1
+cygX3_FIM.Beam                             FarFieldPointSource 0 0
+cygX3_FIM.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_FIM.Spectrum                         File cygX3_FIM_spec.dat
+cygX3_FIM.Lightcurve                       File false cygX3_FIM_lc.dat
+cygX3_FIM.Flux                             0.001402866
+cygX3_FIM.EarthOccultation false
+
+DataChallenge.Source                   cygX3_FSXR
+cygX3_FSXR.ParticleType                     1
+cygX3_FSXR.Beam                             FarFieldPointSource 0 0
+cygX3_FSXR.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_FSXR.Spectrum                         File cygX3_FSXR_spec.dat
+cygX3_FSXR.Lightcurve                       File false cygX3_FSXR_lc.dat
+cygX3_FSXR.Flux                             0.00202334
+cygX3_FSXR.EarthOccultation false
+
+DataChallenge.Source                   cygX3_hypersoft
+cygX3_hypersoft.ParticleType                     1
+cygX3_hypersoft.Beam                             FarFieldPointSource 0 0
+cygX3_hypersoft.Orientation                      Galactic Fixed 0.70006 79.84549
+cygX3_hypersoft.Spectrum                         File cygX3_hypersoft_spec.dat
+cygX3_hypersoft.Lightcurve                       File false cygX3_hypersoft_lc.dat
+cygX3_hypersoft.Flux                             0.00202334
+cygX3_hypersoft.EarthOccultation false

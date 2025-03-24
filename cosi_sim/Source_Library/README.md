@@ -139,6 +139,7 @@ DC3/sources/Galactic/MAXIJ1348 <br />
 DC3/sources/Galactic/GRS1758 <br />
 DC3/sources/Galactic/cygX1_hard <br />
 DC3/sources/Galactic/cygX1_soft <br />
+DC3/sources/Galactic/cygX3 <br />
 DC3/sources/Galactic/1E1740_compow <br />
 DC3/sources/Galactic/1E1740_twocompt <br />
 DC3/sources/Galactic/1RXSJ170849 <br />
