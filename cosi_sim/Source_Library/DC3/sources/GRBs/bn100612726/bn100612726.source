@@ -16,7 +16,7 @@ bn100612726.Beam            FarFieldPointSource 0.0 0.0
 bn100612726.Orientation     Galactic Fixed 46.65011930583231 338.41791273356
 
 # Spectrum 
-bn100612726.Spectrum        Band 100 10000 -0.735003 -2.491069 89.63539043966111
+bn100612726.Spectrum        Band 100 10000 -2.491069
 
 # Average photon flux in photon/cm2/s
 bn100612726.Flux            1.0235802063211183
