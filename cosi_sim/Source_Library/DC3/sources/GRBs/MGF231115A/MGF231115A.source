@@ -13,7 +13,7 @@ MGF231115A.ParticleType     1
 MGF231115A.Beam             FarFieldPointSource 0 0
 
 # Orientation: Latitude b [deg], Longitude l [deg]
-MGF080723557.Orientation      Galactic Fixed 40.56775	141.6723674
+MGF231115A.Orientation      Galactic Fixed 40.56775	141.6723674
 
 # Comptonized Spectrum parameters: Flux integration min and max energies, alpha, Epeak
 MGF231115A.Spectrum         Comptonized 100.0 10000.0 0.14 618
