@@ -13,7 +13,7 @@ MGF070222.ParticleType     1
 MGF070222.Beam             FarFieldPointSource 0 0
 
 # Orientation: Latitude b [deg], Longitude l [deg]
-MGF080723557.Orientation      Galactic Fixed 31.9727275	314.5837084
+MGF070222.Orientation      Galactic Fixed 31.9727275	314.5837084
 
 # Comptonized Spectrum parameters: Flux integration min and max energies, alpha, Epeak
 MGF070222.Spectrum         Comptonized 100.0 10000.0 1.0 1287
