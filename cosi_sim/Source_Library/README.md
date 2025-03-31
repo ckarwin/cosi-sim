@@ -103,6 +103,9 @@ DC3/sources/511/Positrons_from_26Al_cont <br />
 DC3/sources/511/Positrons_from_26Al_line <br />
 DC3/sources/511/Positrons_from_44Ti_line <br />
 DC3/sources/511/Positrons_from_44Ti_cont <br />
+DC3/sources/511/BB_511 <br />
+DC3/sources/511/NB_511 <br />
+DC3/sources/511/NFW2_511 <br />
 DC3/sources/Al26/26Al_Cyg_Region <br />
 DC3/sources/Al26/26Al_NE2001 <br />
 DC3/sources/Ti44/CasAfullyresolved <br />
