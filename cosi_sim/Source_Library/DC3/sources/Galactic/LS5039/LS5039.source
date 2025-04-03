@@ -1,0 +1,19 @@
+# Define DC3 sim settings (optimizes sim time):
+DefaultRangeCut 0.005
+Region Spacecraft
+Spacecraft.Volume SCbody
+Spacecraft.RangeCut 1.
+
+Region Pipebody
+Pipebody.Volume PIPbody
+Pipebody.RangeCut 1.
+
+DataChallenge.Source                    LS5039
+LS5039.ParticleType                     1
+LS5039.Beam                             FarFieldPointSource 0 0
+# Orientation: Latitude b [deg], Longitude l [deg]
+LS5039.Orientation                      Galactic Fixed -1.28921165 16.88158741
+LS5039.Spectrum                         File LS5039_spec.dat
+LS5039.Lightcurve                       File true LS5039_lc.dat
+LS5039.Flux                             0.0003006
+LS5039.EarthOccultation false

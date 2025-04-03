@@ -146,6 +146,7 @@
 'DC3/sources/Galactic/1E1740_compow',
 'DC3/sources/Galactic/1E1740_twocompt',
 'DC3/sources/Galactic/1RXSJ170849',
+'DC3/sources/Galactic/LS5039',
 'DC3/sources/GRBs/bn081207680',
 'DC3/sources/GRBs/bn090424592',
 'DC3/sources/GRBs/bn100612726',
