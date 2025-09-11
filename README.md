@@ -7,9 +7,10 @@ The simulation module requires the MEGAlib code, available [here](http://megalib
 For any help/problems with running the simulation module please contact Chris Karwin at: christopher.m.karwin@nasa.gov. 
 
 ## Data Challenge Releases <br />
-* March 2023: The first data challenge is now available! It can be found [here](https://github.com/cositools/cosi-data-challenge-1.git).
-* March 2024: The second data challenge is now available! It can be found [here](https://github.com/cositools/cosi-data-challenge-2).
-
+* March 2023: The first data challenge can be found [here](https://github.com/cositools/cosi-data-challenge-1.git).
+* March 2024: The second data challenge can be found [here](https://github.com/cositools/cosi-data-challenge-2).
+* April 2025: The third data challenge can be found [here](https://github.com/cositools/cosi-data-challenges).
+  
 ## Purpose <br />
 The main purpose of this repository is to simulate the all-sky data that will be observed by COSI. The primary code is **simulate.py**, which can be called with **run_sims.py**, with the main input parameters passed via **inputs.yaml**. Additionally, parallel simulations with multiple time bins can be ran using **run_parallel_sims.py**, which distributes the time bins to seperate compute nodes. The pipeline also supports the use of mcosima with numerous cores per compute node. The modules can be ran directly from the command line, or submitted to a batch system, which allows them to be easily employed for generating multiple/long simulations. 
 
