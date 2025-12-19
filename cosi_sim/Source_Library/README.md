@@ -171,6 +171,20 @@ DC3/sources/GRBs/MgtBurst_bright_simple <br />
 DC3/sources/GRBs/MgtBurst_dim_complex <br />
 DC3/sources/GRBs/MgtBurst_dim_simple <br />
 
+## Data Challenge 4 (DC4) <br />
+DC4/backgrounds/GalTotal_SA100_F98 <br />
+DC4/backgrounds/AlbedoNeutrons <br />
+DC4/backgrounds/AlbedoPhotons <br />
+DC4/backgrounds/CosmicPhotons <br />
+DC4/backgrounds/PrimaryAlphas <br />
+DC4/backgrounds/PrimaryElectrons <br />
+DC4/backgrounds/PrimaryPositrons <br />
+DC4/backgrounds/PrimaryProtons <br />
+DC4/backgrounds/SAAprotons <br />
+DC4/backgrounds/SecondaryElectrons <br />
+DC4/backgrounds/SecondaryPositrons <br />
+DC4/backgrounds/SecondaryProtons <br />
+
 ## Galactic Diffuse (Galdiff) <br />
 Galdiff/GalIC <br />
 Galdiff/GalBrem <br />
