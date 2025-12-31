@@ -12,8 +12,8 @@ Pipebody.RangeCut 1.
 DataChallenge.Source AlbedoPhotons
 AlbedoPhotons.ParticleType	       1
 AlbedoPhotons.Beam FarFieldEarthOccultation true
-AlbedoPhotons.Spectrum  File AlbedoPhotons_Spec_530.0km_0.0deg_10.000cutoff_520.0solarmod_fluxdividedby1000.dat
-AlbedoPhotons.Flux	  0.8175739522371263e-3
+AlbedoPhotons.Spectrum  File AlbedoPhotons_Spec_530.0km_0.0deg_12.600cutoff_520.0solarmod_fluxdividedby1000.dat
+AlbedoPhotons.Flux	  0.7568194027630226e-3
 AlbedoPhotons.LightCurve File false AlbedoPhotons_LightCurve.dat
 
 DetectorTimeConstant 0.000002
