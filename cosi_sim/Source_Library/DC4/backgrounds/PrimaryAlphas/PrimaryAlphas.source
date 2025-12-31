@@ -18,6 +18,6 @@ DetectorTimeConstant 0.000002
 DataChallenge.Source PrimaryAlpha
 PrimaryAlpha.ParticleType	    21
 PrimaryAlpha.Beam FarFieldEarthOccultation false
-PrimaryAlpha.Spectrum File PrimaryAlphas_HelMod_Spec_530.0km_0.0deg_10.000cutoff_520.0solarmod_fluxdividedby1000.dat
-PrimaryAlpha.Flux               0.019645909071087774e-3
+PrimaryAlpha.Spectrum File PrimaryAlphas_Spec_530.0km_0.0deg_12.600cutoff_520.0solarmod_fluxdividedby1000.dat
+PrimaryAlpha.Flux                0.017755030668705027e-3
 PrimaryAlpha.LightCurve File false PrimaryAlphas_HelMod_LightCurve.dat
