@@ -180,5 +180,6 @@
 'DC4/backgrounds/SAAprotons',
 'DC4/backgrounds/SecondaryElectrons',
 'DC4/backgrounds/SecondaryPositrons',
-'DC4/backgrounds/SecondaryProtons'
+'DC4/backgrounds/SecondaryProtons',
+'DC4/sources/511/Positrons_In_Flight_Annihilation'
 ]
